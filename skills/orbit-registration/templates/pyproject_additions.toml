@@ -1,0 +1,4 @@
+# Orbit client dependencies — add under [tool.poetry.dependencies]
+
+requests = "^2.34.2"   # heartbeat HTTP POST
+tomli = "^2.4.0"       # reads [tool.poetry].version from pyproject.toml

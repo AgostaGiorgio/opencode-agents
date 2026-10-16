@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "__PROJECT_NAME__"
+version = "0.1.0"
+description = "__PROJECT_DESCRIPTION__"
+authors = ["Your Name <you@example.com>"]
+packages = [
+    { include = "src" },
+]
+# readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10.12"
+fastapi = "^0.110.0"
+uvicorn = { extras = ["standard"], version = "^0.28.0" }
+pyyaml = "^6.0.3"
+dependency-injector = "^4.41.0"
+tomli = "^2.4.0"
+sqlalchemy = "^2.0.46"
+asyncpg = "^0.31.0"
+pydantic-settings = "^2.13.1"
+pydantic = "^2.12.5"
+greenlet = "^3.3.1"
+requests = "^2.34.2"
+
+[tool.poetry.group.dev.dependencies]
+yoyo-migrations = "^9.0.0"
+psycopg2-binary = "^2.9.11"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
